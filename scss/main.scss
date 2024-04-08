@@ -1,6 +1,8 @@
 $blue: #005bbe;
 $text-color: #242424;
 $gray: #848484;
+$text-gray: #787878;
+$light-gray: #e1e1e1;
 
 * {
 	box-sizing: border-box;
@@ -13,6 +15,8 @@ body {
 	font-family: "Raleway", sans-serif;
 	color: $text-color;
 	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.4;
 }
 
 h1,
@@ -99,11 +103,12 @@ li {
 
 .container {
 	width: 100%;
+	max-width: 1520px;
 	margin: 0 auto;
 	padding: 0 20px;
 
 	@media (min-width: 1200px) {
-		padding: 0 100px;
+		padding: 0;
 	}
 }
 
@@ -142,7 +147,7 @@ header {
 			display: flex;
 			flex-direction: row;
 			gap: 34px;
-			margin: 0;
+			padding-top: 0;
 		}
 
 		li {
@@ -347,6 +352,7 @@ header {
 	font-weight: 500;
 	color: $text-color;
 	line-height: 1.17;
+	text-align: center;
 }
 
 .button {
@@ -414,5 +420,108 @@ header {
 
 	img {
 		max-width: 760px;
+	}
+}
+
+// Helps
+.helped-section {
+	margin-top: 100px;
+
+	.helped-items {
+		margin-top: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+
+		.helped-item {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			flex: 1 0 1;
+			max-width: 622px;
+			padding: 30px 20px;
+			border: 1px solid $light-gray;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+
+			@media (min-width: 768px) {
+				max-width: 354px;
+				flex: 354px 1 1;
+			}
+
+			@media (min-width: 1140px) {
+				flex: 354px;
+				max-width: 354px;
+			}
+
+			@media (min-width: 1200px) {
+				flex: 489px 1 1;
+				max-width: 489px;
+			}
+
+			@media (min-width: 1440px) {
+				flex: 622px 1 1;
+				max-width: 622px;
+			}
+
+			@media (min-width: 1920px) {
+				flex: 750px 1 1;
+				max-width: 750px;
+			}
+
+			.title-item {
+				font-size: 20px;
+				line-height: 1.2;
+				font-weight: 600;
+			}
+
+			.content {
+				color: $text-gray;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				gap: 10px;
+				height: 100%;
+
+				@media (min-width: 1440px) {
+					flex-direction: row;
+				}
+
+				.functional {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 30px;
+
+					@media (min-width: 1440px) {
+						align-self: flex-start;
+					}
+				}
+
+				.image {
+					display: none;
+
+					@media (min-width: 768px) {
+						display: block;
+						img {
+							max-width: 150px;
+							width: 100%;
+						}
+					}
+
+					@media (min-width: 1200px) {
+						img {
+							max-width: 300px;
+							width: 300px;
+						}
+					}
+				}
+			}
+		}
 	}
 }
