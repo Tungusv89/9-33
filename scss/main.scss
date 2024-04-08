@@ -40,6 +40,10 @@ input {
 a {
 	text-decoration: none;
 	cursor: pointer;
+
+	&:visited {
+		color: $blue;
+	}
 }
 
 img {
@@ -407,6 +411,68 @@ header {
 		margin: 20px 0 auto auto;
 		display: block;
 		width: fit-content;
+
+		@media (min-width: 1440px) {
+			margin: 20px auto 0 auto;
+		}
+	}
+}
+
+.items {
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+
+	.item {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		flex: 1 0 1;
+		max-width: 622px;
+		padding: 30px 20px;
+		border: 1px solid $light-gray;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+
+		@media (min-width: 768px) {
+			max-width: 354px;
+			flex: 354px 1 1;
+		}
+
+		@media (min-width: 1140px) {
+			flex: 354px;
+			max-width: 354px;
+		}
+
+		@media (min-width: 1200px) {
+			flex: 489px 1 1;
+			max-width: 489px;
+		}
+
+		@media (min-width: 1440px) {
+			flex: 622px 1 1;
+			max-width: 622px;
+		}
+
+		@media (min-width: 1920px) {
+			flex: 750px 1 1;
+			max-width: 750px;
+		}
+
+		.title-item {
+			font-size: 20px;
+			line-height: 1.2;
+			font-weight: 600;
+
+			@media (min-width: 1200px) {
+				font-size: 30px;
+			}
+		}
 	}
 }
 
@@ -458,110 +524,120 @@ header {
 .helped-section {
 	margin-top: 100px;
 
-	.helped-items {
-		margin-top: 40px;
+	.content {
+		color: $text-gray;
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 20px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+		height: 100%;
 
-		.helped-item {
+		@media (min-width: 1440px) {
+			flex-direction: row;
+		}
+
+		.functional {
 			display: flex;
 			flex-direction: column;
-			gap: 15px;
-			flex: 1 0 1;
-			max-width: 622px;
-			padding: 30px 20px;
-			border: 1px solid $light-gray;
-			border-radius: 5px;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			-ms-border-radius: 5px;
-			-o-border-radius: 5px;
+			align-items: center;
+			gap: 30px;
 
-			@media (min-width: 768px) {
-				max-width: 354px;
-				flex: 354px 1 1;
+			@media (min-width: 1440px) {
+				align-items: flex-start;
 			}
 
-			@media (min-width: 1140px) {
-				flex: 354px;
-				max-width: 354px;
+			.text {
+				@media (min-width: 1200px) {
+					font-size: 18px;
+				}
+			}
+		}
+
+		.image {
+			display: none;
+
+			@media (min-width: 768px) {
+				display: block;
+				img {
+					max-width: 150px;
+					width: 100%;
+				}
 			}
 
 			@media (min-width: 1200px) {
-				flex: 489px 1 1;
-				max-width: 489px;
+				img {
+					max-width: 300px;
+					width: 300px;
+				}
+			}
+		}
+	}
+}
+
+// About
+
+.about-body {
+	margin-top: 80px;
+
+	.content {
+		margin-top: 40px;
+
+		.info {
+			color: $text-gray;
+
+			@media (min-width: 768px) {
+				font-size: 16px;
 			}
 
 			@media (min-width: 1440px) {
-				flex: 622px 1 1;
-				max-width: 622px;
-			}
-
-			@media (min-width: 1920px) {
-				flex: 750px 1 1;
-				max-width: 750px;
-			}
-
-			.title-item {
-				font-size: 20px;
-				line-height: 1.2;
-				font-weight: 600;
-
-				@media (min-width: 1200px) {
-					font-size: 30px;
-				}
-			}
-
-			.content {
-				color: $text-gray;
-				display: flex;
-				flex-direction: column;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
 				align-items: center;
-				justify-content: space-between;
-				gap: 10px;
-				height: 100%;
+				gap: 126px;
+				font-size: 20px;
+				line-height: 1.6;
+			}
 
-				@media (min-width: 1440px) {
-					flex-direction: row;
+			img {
+				margin-top: 20px;
+
+				@media (min-width: 768px) {
+					max-width: 728px;
 				}
+			}
+		}
+	}
 
-				.functional {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					gap: 30px;
+	.about-items {
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 30px;
 
-					@media (min-width: 1440px) {
-						align-items: flex-start;
-					}
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
 
-					.text {
-						@media (min-width: 1200px) {
-							font-size: 18px;
-						}
-					}
-				}
+		.item {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			gap: 24px;
 
-				.image {
-					display: none;
+			.value {
+				font-family: "Nunito";
+				font-size: 50px;
+				font-weight: 500;
+				color: $blue;
+			}
 
-					@media (min-width: 768px) {
-						display: block;
-						img {
-							max-width: 150px;
-							width: 100%;
-						}
-					}
-
-					@media (min-width: 1200px) {
-						img {
-							max-width: 300px;
-							width: 300px;
-						}
-					}
-				}
+			.text {
+				font-size: 20px;
+				font-weight: 500;
+				color: #000;
+				text-align: center;
 			}
 		}
 	}
