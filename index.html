@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+    <title>
+        9-33
+    </title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-body">
+                <a class="logo" href="/">
+                    <img src="/img/logo.png" />
+                </a>
+                <ul class="header-menu">
+                    <li class="header-menu-item">
+                        <a class="header-menu-itemurl" href="/">Главная</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-itemurl" href="/">Блог</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-itemurl" href="/">Проекты</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-itemurl" href="/">О нас</a>
+                    </li>
+                    <li class="header-menu-item">
+                        <a class="header-menu-itemurl" href="/">Контакты</a>
+                    </li>
+                    <li class="social">
+                        <a href=""><img src="img/telegram.svg" alt=""></a>
+                        <a href=""><img src="img/vk.svg" alt=""></a>
+                    </li>
+                </ul>
+                <div class="header-information-container">
+                    <div class="header-connection">
+                        <a class="header-phone" href="tel:+79459009965">+7 945 900 99 65</a>
+                        <button class="header-btn-connection">
+                            <span>Заказать обратный звонок</span>
+                        </button>
+                    </div>
+                    <div class="header-menu__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- <section class="main-section">
+        <div class="main-container">
+            <div class="main-content">
+                <div class="main-content-textcontainer">
+                    <h1 class="main-content-maintext">Мы автоматизируем – вы растёте</h1>
+                    <span class="main-content-text">Комплексные услуги по оптимизации, автоматизации и <a href="/"
+                            class="main-content-texturl">повышению эффективности</a> Вашего бизнеса, с применением
+                        удобных и доступных инструментов и методик.</span>
+                </div>
+                <div class="main-buttons-container">
+                    <button class="main-btn-connection">Связаться с нами</button>
+                    <button class="main-btn-exchange">Узнать подробнее</button>
+                </div>
+            </div>
+            <img src="/img/mainimage.png" />
+        </div>
+    </section> -->
+    <!-- <section class="helped-section">
+        <div class="helped-container">
+            <h1 class="helped-maintext">Чем мы вам поможем</h1>
+            <div class="helped-items">
+                <div class="helped-item">
+                    <h2 class="helped-item-maintext">Автоматизация и внедрение ПО</h2>
+                    <div class="helped-item-content">
+                        <div class="helped-item-functional">
+                            <div class="helped-item-text-container-all">
+                                <span class="helped-item-text">Мы специализируемся на предоставлении комплексных
+                                    решений, направленных на оптимизацию бизнес-процессов и повышение эффективности
+                                    работы предприятия.</span>
+                                <span class="helped-item-text">Наша команда профессионалов готова помочь вашей компании
+                                    достичь новых высот и улучшить ее результативность при помощи “СБИС”</span>
+                            </div>
+                            <div class="helped-btns-container">
+                                <button class="helped-btn-connect">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="helped-item-image">
+                            <img src="/img/helped-image-1.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="helped-item">
+                    <h2 class="helped-item-maintext">Разработка и продвижение сайтов</h2>
+                    <div class="helped-item-content">
+                        <div class="helped-item-functional">
+                            <div class="helped-item-text-container-all">
+                                <span class="helped-item-text">Мы предлагаем сделать Вам привлекательный и
+                                    функциональный веб-сайт. Мы предлагаем сделать Вам привлекательный и функциональный
+                                    веб-сайт</span>
+                            </div>
+                            <div class="helped-btns-container">
+                                <button class="helped-btn-connect">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="helped-item-image">
+                            <img src="/img/helped-image-2.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="helped-item">
+                    <h2 class="helped-item-maintext">Системное администрирование</h2>
+                    <div class="helped-item-content">
+                        <div class="helped-item-functional">
+                            <div class="helped-item-text-container-all">
+                                <span class="helped-item-text">Наша команда экспертов обладает глубокими знаниями и
+                                    опытом в области системного администрирования. А дальше текст не получилось
+                                    придумать, но я думаю у вас получится</span>
+                            </div>
+                            <div class="helped-btns-container">
+                                <button class="helped-btn-connect">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="helped-item-image">
+                            <img src="/img/helped-image-3.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="helped-item">
+                    <h2 class="helped-item-maintext">Техническая поддержка</h2>
+                    <div class="helped-item-content">
+                        <div class="helped-item-functional">
+                            <div class="helped-item-text-container-all">
+                                <span class="helped-item-text">Мы предлагаем комплексные решения для серверов, сетевого
+                                    оборудования, резервного копирования данных и мониторинга. Наша команда быстро
+                                    реагирует на проблемы и обеспечивает эффективное функционирование Вашей
+                                    IT-инфраструктуры.</span>
+                            </div>
+                            <div class="helped-btns-container">
+                                <button class="helped-btn-connect">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="helped-item-image">
+                            <img src="/img/helped-image-4.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="helped-item">
+                <div class="helped-item-textcontent-all">
+                    <div class="helped-item-textcontainer">
+                        <h2 class="helped-item-maintext">Разработка и продвижение сайтов</h2>
+                        <div class="helped-item-text-container-all">
+                            <span class="helped-item-text">Мы предлагаем сделать Вам привлекательный и функциональный веб-сайт. Мы предлагаем сделать Вам привлекательный и функциональный веб-сайт</span>
+                        </div>
+                        <div class="helped-btns-container">
+                            <button class="helped-btn-connect">Подробнее</button>
+                            <button class="helped-btn-extend">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="helped-item-image">
+                    <img src="/img/helped-image-2.png"/>
+                </div>
+            </div>
+            <div class="helped-item">
+                <div class="helped-item-textcontent-all">
+                    <div class="helped-item-textcontainer">
+                        <h2 class="helped-item-maintext">Системное администрирование</h2>
+                        <div class="helped-item-text-container-all">
+                            <span class="helped-item-text">Наша команда экспертов обладает глубокими знаниями и опытом в области системного администрирования. А дальше текст не получилось придумать, но я думаю у вас получится</span>
+                        </div>
+                        <div class="helped-btns-container">
+                            <button class="helped-btn-connect">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="helped-item-image">
+                    <img src="/img/helped-image-3.png"/>
+                </div>
+            </div>
+            <div class="helped-item">
+                <div class="helped-item-textcontent-all">
+                    <div class="helped-item-textcontainer">
+                        <h2 class="helped-item-maintext">Техническая поддержка</h2>
+                        <div class="helped-item-text-container-all">
+                            <span class="helped-item-text">Мы предлагаем комплексные решения для серверов, сетевого оборудования, резервного копирования данных и мониторинга. Наша команда быстро реагирует на проблемы и обеспечивает эффективное функционирование Вашей IT-инфраструктуры.</span>
+                        </div>
+                        <div class="helped-btns-container">
+                            <button class="helped-btn-connect">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="helped-item-image">
+                    <img src="/img/helped-image-4.png"/>
+                </div>
+            </div>-->
+
+    <!--<div class="helped-item">
+                <div class="helped-item-textcontent-all">
+                    <div class="helped-item-textcontainer">
+                        <h2 class="helped-item-maintext">Разработка и продвижение сайтов</h2>
+                        <div class="helped-item-text-container-all">
+                            <span class="helped-item-text">Мы предлагаем сделать Вам привлекательный и функциональный веб-сайт. Мы предлагаем сделать Вам привлекательный и функциональный веб-сайт</span>
+                        </div>
+                    </div>
+                    <div class="helped-btns-container">
+                        <button class="helped-btn-connect">Подробнее</button>
+                            <button class="helped-btn-extend">Заказать</button>
+                    </div>
+                </div>
+                <div class="helped-item-image">
+                    <img src="/img/helped-image-2.png"/>
+                </div>
+            </div>
+
+            <div class="helped-item">
+
+                <div class="helped-item-textcontainer">
+                    <h2 class="helped-item-maintext">Системное администрирование</h2>
+                    <div class="helped-item-text-container-all">
+                        <span class="helped-item-text">Наша команда экспертов обладает глубокими знаниями и опытом в области системного администрирования. А дальше текст не получилось придумать, но я думаю у вас получится</span>
+                    </div>
+                </div>
+                <div class="helped-btns-container">
+                    <button class="helped-btn-connect">Подробнее</button>
+                    <button class="helped-btn-extend">Заказать</button>
+                </div>
+            </div>
+            <div class="helped-item">
+                <div class="helped-item-textcontainer">
+                    <h2 class="helped-item-maintext">Техническая поддержка</h2>
+                    <div class="helped-item-text-container-all">
+                        <span class="helped-item-text">Мы предлагаем комплексные решения для серверов, сетевого оборудования, резервного копирования данных и мониторинга. Наша команда быстро реагирует на проблемы и обеспечивает эффективное функционирование Вашей IT-инфраструктуры.</span>
+                    </div>
+                </div>
+                <div class="helped-btns-container">
+                    <button class="helped-btn-connect">Подробнее</button>
+                    <button class="helped-btn-extend">Заказать</button>
+                </div>
+            </div>
+            </div>
+            <button class="servicesall-btn">Перейти ко всем услугам</button>
+        </div>
+    </section> -->
+    <!-- <section class="iteraction-section">
+        <div class="iteraction-container">
+            <div class="iteraction-text-container">
+                <h1 class="iteraction-maintext">Этапы нашего взаимодействия</h1>
+                <h2 class="iteraction-text">Наша компания предлагает автоматизацию для среднего и крупного бизнеса, где
+                    мы гарантируем индивидуальный подход к каждому клиенту, предлагая команду экспертов, способных
+                    реализовать проекты любой сложности.</h2>
+            </div>
+            <div class="iteraction-items">
+                <div class="iteraction-item">
+                    <div class="iteraction-stageblock">
+                        <span class="iteraction-stageblock-text">1 этап</span>
+                    </div>
+                    <div class="iteraction-item-textcontainer">
+                        <h2 class="iteraction-item-maintext">Звонок в офис</h2>
+                        <span class="iteraction-item-text">Мы специализируемся на предоставлении комплексных решений,
+                            направленных на оптимизацию бизнес-процессов и повышение эффективности работы предприятия.
+                            Наша команда профессионалов готова помочь вашей компании достичь новых высот и улучшить ее
+                            результативность при помощи “СБИС”</span>
+                    </div>
+                </div>
+                <div class="iteraction-item">
+                    <div class="iteraction-stageblock">
+                        <span class="iteraction-stageblock-text">2 этап</span>
+                    </div>
+                    <div class="iteraction-item-textcontainer">
+                        <h2 class="iteraction-item-maintext">Выезд проектной команды</h2>
+                        <span class="iteraction-item-text">На встрече с представителями Вашей компании обсуждаются
+                            основные этапы проекта. Если при разборе сложившейся ситуации проектная команда не получает
+                            необходимых сведений, то вам может быть предложено проведение предпроектного обследования и
+                            оговаривается его стоимость.</span>
+                    </div>
+                </div>
+                <div class="iteraction-item">
+                    <div class="iteraction-stageblock">
+                        <span class="iteraction-stageblock-text">3 этап</span>
+                    </div>
+                    <div class="iteraction-item-textcontainer">
+                        <h2 class="iteraction-item-maintext">Предпроектное обследование (опционально)</h2>
+                        <span class="iteraction-item-text">В ходе предпроектного обследования изучаются бизнес процессы
+                            подлежащие автоматизации, подбирается оптимальный программный продукт, обозначаются этапы,
+                            сроки и бюджет проекта.</span>
+                    </div>
+                </div>
+                <div class="iteraction-item">
+                    <div class="iteraction-stageblock">
+                        <span class="iteraction-stageblock-text">4 этап</span>
+                    </div>
+                    <div class="iteraction-item-textcontainer">
+                        <h2 class="iteraction-item-maintext">Исполнение проекта</h2>
+                        <span class="iteraction-item-text">Происходит внедрение продукта, обычно оно разбито на этапы:
+                            моделирование, разработка, тестовая эксплуатация, опытная эксплуатация. Однако каждый проект
+                            уникален, и этапы могут отличаться.</span>
+                    </div>
+                </div>
+            </div>
+            <button class="iteractionsall-btn">Обсудить ваш проект</button>
+        </div>
+    </section>
+    <section class="about-section">
+        <div class="about-container">
+            <h1 class="about-maintext">Кто мы</h1>
+            <div class="about-content-container">
+                <div class="about-inform-container">
+                    <span class="about-inform-text">Компания 9-33 является <a href="/" class="about-inform-url">ведущим
+                            представителем</a> инновационных решений в автоматизации предприятий. Мы разрабатываем
+                        уникальные программные продукты, помогающие оптимизировать бизнес-процессы и повышать
+                        эффективность работы. Наша команда высококвалифицированных специалистов готова оказать
+                        профессиональную поддержку и консультации на всех этапах сотрудничества.</span>
+                    <img src="/img/1.jpg" />
+                </div>
+                <div class="about-content-items">
+                    <div class="about-item">
+                        <span class="about-item-maintext">650</span>
+                        <span class="about-item-text">Успешно завершённых проектов</span>
+                    </div>
+                    <div class="about-item">
+                        <span class="about-item-maintext">10</span>
+                        <span class="about-item-text">Лет на рынке</span>
+                    </div>
+                    <div class="about-item">
+                        <span class="about-item-maintext">100</span>
+                        <span class="about-item-text">Партнеров по всей России</span>
+                    </div>
+                    <div class="about-item">
+                        <span class="about-item-maintext">650</span>
+                        <span class="about-item-text">Техническая поддержка для наших партнеров</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="whatabout-section">
+        <div class="whatabout-container">
+            <h1 class="whatabout-maintext">Почему мы?</h1>
+            <div class="whatabout-items">
+                <div class="whatabout-item">
+                    <img class="whatabout-image" src="/img/whatabout-image-1.png" />
+                    <div class="whatabout-item-textcontainer">
+                        <span class="whatabout-item-maintext">Скидка <span
+                                class="whatabout-item-maintext-blue">30%</span> на все услуги</span>
+                        <span class="whatabout-item-text">Для всех новых клиентов предоставляем скидку 30% на любые
+                            услуги.</span>
+                    </div>
+                </div>
+                <div class="whatabout-item">
+                    <img class="whatabout-image" src="/img/whatabout-image-2.png" />
+                    <div class="whatabout-item-textcontainer">
+                        <span class="whatabout-item-maintext">Делаем всегда в срок</span>
+                        <span class="whatabout-item-text">Получите качественный продукт без переносов, завтраков и
+                            дальше я не придумал текст</span>
+                    </div>
+                </div>
+                <div class="whatabout-item">
+                    <img class="whatabout-image" src="/img/whatabout-image-3.png" />
+                    <div class="whatabout-item-textcontainer">
+                        <span class="whatabout-item-maintext">Не выходим за рамки бюджета</span>
+                        <span class="whatabout-item-text">Мы берем на себя все дополнительные работы, вам нужно оплатить
+                            только оговоренную сумму</span>
+                    </div>
+                </div>
+                <div class="whatabout-item">
+                    <img class="whatabout-image" src="/img/whatabout-image-4.png" />
+                    <div class="whatabout-item-textcontainer">
+                        <span class="whatabout-item-maintext">Предлагаем лучшее качество</span>
+                        <span class="whatabout-item-text">Долгосрочное, взаимовыгодное сотрудничество – наш приоритет.
+                            Мы заинтересованы в результате оказываемых вам услуг</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="business-section">
+        <div class="business-container">
+            <div class="business-information-container">
+                <h1 class="business-information-maintext"><span class="business-information-maintext-blue">Бесплатный
+                        старт </span>для вашего бизнеса</h1>
+                <span class="business-information-text">Хотите увеличить эффективность и прибыльность своего бизнеса?
+                    Тогда пришло время обратить внимание на автоматизацию процессов при помощи СБИС – уникальной
+                    системы, которая поможет вам достичь нового уровня успеха! У вас есть уникальная возможность начать
+                    автоматизацию вашего бизнеса совершенно бесплатно! Мы предлагаем вам протестировать СБИС без
+                    каких-либо обязательств и оплаты в течение первых 30 дней. Так вы сможете оценить все преимущества
+                    системы и убедиться, насколько она подходит для вашего бизнеса.</span>
+                <button class="business-btn">Заказать бесплатно!</button>
+            </div>
+            <img src="/img/business-image.png" />
+        </div>
+    </section>
+    <section class="reviews-section">
+        <div class="reviews-container">
+            <h1 class="reviews-maintext">Отзывы наших клиентов</h1>
+            <div class="reviews-slider-container">
+                <button class="reviews-slider-leftbtn">
+                    <img src="/img/left-arrow-slider.png" />
+                </button>
+                <div class="reviews-items">
+                    <div class="reviews-item">
+                        <div class="reviews-item-profilecontent">
+                            <img src="/img/reviews-image.png" />
+                            <div class="reviews-item-information">
+                                <span class="reviews-item-infomaintext">Иван Иванов</span>
+                                <span class="reviews-item-infotext">директор издания Фауст медиа</span>
+                            </div>
+                        </div>
+                        <span class="reviews-item-text">Вот вам яркий пример современных тенденций — укрепление и
+                            развитие внутренней структуры требует от нас анализа как самодостаточных, так и внешне
+                            зависимых концептуальных решений. Внезапно, действия представителей оппозиции заблокированы
+                            в рамках своих собственных рациональных ограничений. И нет сомнений, что акционеры
+                            крупнейших компаний будут смешаны с не уникальными данными до степени совершенной
+                            неузнаваемости, из-за чего возрастает их статус бесполезности.</span>
+                    </div>
+                    <div class="reviews-item">
+                        <div class="reviews-item-profilecontent">
+                            <img src="/img/reviews-image.png" />
+                            <div class="reviews-item-information">
+                                <span class="reviews-item-infomaintext">Иван Иванов</span>
+                                <span class="reviews-item-infotext">директор издания Фауст медиа</span>
+                            </div>
+                        </div>
+                        <span class="reviews-item-text">Вот вам яркий пример современных тенденций — укрепление и
+                            развитие внутренней структуры требует от нас анализа как самодостаточных, так и внешне
+                            зависимых концептуальных решений. Внезапно, действия представителей оппозиции заблокированы
+                            в рамках своих собственных рациональных ограничений. И нет сомнений, что акционеры
+                            крупнейших компаний будут смешаны с не уникальными данными до степени совершенной
+                            неузнаваемости, из-за чего возрастает их статус бесполезности.</span>
+                    </div>
+                </div>
+                <button class="reviews-slider-rightbtn">
+                    <img src="/img/right-arrow-slider.png" />
+                </button>
+            </div>
+            <div class="reviews-slider-dots">
+                <div class="reviews-slider-dot-active"></div>
+                <div class="reviews-slider-dot"></div>
+                <div class="reviews-slider-dot"></div>
+                <div class="reviews-slider-dot"></div>
+            </div>
+        </div>
+    </section>
+    <section class="partners-section">
+        <div class="partners-container">
+            <h1 class="partners-maintext">Партнёры</h1>
+            <div class="partners-items">
+                <div class="partners-item">
+                    <a href="/">
+                        <img src="/img/partners-image-1.png" />
+                    </a>
+                </div>
+                <div class="partners-item">
+                    <a href="/">
+                        <img src="/img/partners-image-2.png" />
+                    </a>
+                </div>
+                <div class="partners-item">
+                    <a href="/">
+                        <img src="/img/partners-image-3.png" />
+                    </a>
+                </div>
+                <div class="partners-item">
+                    <a href="/">
+                        <img src="/img/partners-image-4.png" />
+                    </a>
+                </div>
+                <div class="partners-item">
+                    <a href="/">
+                        <img src="/img/partners-image-5.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="competence-section">
+        <div class="competence-container">
+            <h1 class="competence-maintext">Компетенции</h1>
+            <div class="competence-slider-container">
+                <button class="competence-slider-leftbtn">
+                    <img src="/img/left-arrow-slider.png" />
+                </button>
+                <div class="competence-items">
+                    <div class="competence-item">
+                        <img src="/img/competence-img-1.png" />
+                    </div>
+                    <div class="competence-item">
+                        <img src="/img/competence-img-1.png" />
+                    </div>
+                    <div class="competence-item">
+                        <img src="/img/competence-img-1.png" />
+                    </div>
+                    <div class="competence-item">
+                        <img src="/img/competence-img-1.png" />
+                    </div>
+                </div>
+                <button class="competence-slider-rightbtn">
+                    <img src="/img/right-arrow-slider.png" />
+                </button>
+            </div>
+            <div class="competence-slider-dots">
+                <div class="competence-slider-dot-active"></div>
+                <div class="competence-slider-dot"></div>
+                <div class="competence-slider-dot"></div>
+                <div class="competence-slider-dot"></div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts-section">
+        <div class="contacts-container">
+            <h1 class="contacts-maintext">Контакты</h1>
+            <div class="contacts-content-container">
+                <div class="contacts-content-item">
+                    <a class="contacts-content-mailtext" href="mailto:9-33-manager@yandex.ru">9-33-manager@yandex.ru</a>
+                    <span class="contacts-content-text">Написать нам на почту</span>
+                </div>
+                <div class="contacts-content-item">
+                    <a class="contacts-content-phonetext" href="tel:+79459009965">+7 945 900 99 65</a>
+                    <span class="contacts-content-text">Позвонить нам</span>
+                </div>
+                <div class="contacts-content-item">
+                    <div class="contacts-content-social">
+                        <a href="/">
+                            <img src="/img/telegram.png" />
+                        </a>
+                        <a href="/">
+                            <img src="/img/vk.png" />
+                        </a>
+                    </div>
+                    <span class="contacts-content-text">Вы можете написать нам в соц. сетях</span>
+                </div>
+                <div class="contacts-map-container">
+                    <div class="contacts-content-item">
+                        <span class="contacts-content-officetext">Наш офис</span>
+                        <span class="contacts-content-text">ул. Михалковская 7, офис 345</span>
+                    </div>
+                    <img src="/img/map-image.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-rights-protect">
+                <a href="/">
+                    <img src="/img/logo.png" />
+                </a>
+                <span class="footer-rights-protect-text">© Все права защищены 2023</span>
+            </div>
+            <div class="footer-content-container">
+                <div class="footer-menus-container">
+                    <div class="footer-menus-item">
+                        <span class="footer-menus-item-text">Инфо</span>
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item">
+                                <a href="/" class="footer-menu-item-url">Главная</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="/" class="footer-menu-item-url">Услуги</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="/" class="footer-menu-item-url">Отзывы</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="/" class="footer-menu-item-url">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menus-item">
+                        <span class="footer-menus-item-text">Аутсорсинг</span>
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item">
+                                <a href="/" class="footer-menu-item-url">Пункт 1</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="/" class="footer-menu-item-url">Длинный пункт</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="/" class="footer-menu-item-url">Пункт 2</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="/" class="footer-menu-item-url">Длинный пункт 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contacts">
+                    <span class="footer-menus-item-text">Контакты</span>
+                    <div class="footer-contacts-info">
+                        <div class="footer-contacts-urls">
+                            <a class="footer-contacts-mailtext"
+                                href="mailto:9-33-manager@yandex.ru">9-33-manager@yandex.ru</a>
+                            <a class="footer-contacts-phonetext" href="tel:+79459009965">+7 945 900 99 65</a>
+                        </div>
+                        <div class="footer-contacts-feedback">
+                            <button class="footer-contacts-btn">
+                                <img src="/img/phone-footer-img.png" />
+                                <span class="footer-contacts-btn-text">Обратный звонок</span>
+                            </button>
+                            <a href="/">
+                                <img src="/img/telegram.png" />
+                            </a>
+                            <a href="/">
+                                <img src="/img/vk.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <!-- <script src="js/jquery.js"></script>
+	<script src="js/main.js"></script> -->
+</body>
+
+</html>

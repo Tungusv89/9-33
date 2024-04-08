@@ -1,0 +1,337 @@
+$blue: #005bbe;
+$text-color: #242424;
+$gray: #848484;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #ffffff;
+	font-family: "Mulish", sans-serif;
+	color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0px;
+	margin: 0px;
+}
+
+section {
+	background-color: #ffffff;
+}
+
+input {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	border: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+
+@font-face {
+	font-family: "Raleway1";
+	src: url("/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Raleway2";
+	src: url("/fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+	font-family: "Raleway3";
+	src: url("/fonts/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: "Nunito1";
+	src: url("/fonts/Nunito-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: "Nunito2";
+	src: url("/fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat1";
+	src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/Raleway-VariableFont_wght.ttf");
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	@media (min-width: 1200px) {
+		padding: 0 100px;
+	}
+}
+
+header {
+	border-bottom: 1px solid rgb(0, 91, 190);
+}
+
+.header-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+	position: relative;
+
+	@media (min-width: 1440px) {
+		padding: 20px 0;
+	}
+
+	.logo {
+		max-width: 73px;
+
+		@media (min-width: 1440px) {
+			max-width: 143px;
+		}
+	}
+
+	.header-menu {
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 70px;
+		margin-top: 80px;
+
+		@media (min-width: 1440px) {
+			display: flex;
+			flex-direction: row;
+			gap: 34px;
+			margin: 0;
+		}
+
+		li {
+			a {
+				color: #241d26;
+				font-size: 24px;
+				font-weight: 450;
+				font-family: "Raleway", sans-serif;
+
+				@media (min-width: 1440px) {
+					font-size: 20px;
+					font-weight: 400;
+				}
+			}
+		}
+
+		.social {
+			display: flex;
+			gap: 23px;
+			padding: 186px 0 40px 0;
+
+			a {
+				img {
+					width: 40px;
+					height: 40px;
+				}
+			}
+
+			@media (min-width: 1440px) {
+				display: none;
+			}
+		}
+
+		&.active {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			top: 61px;
+		}
+	}
+
+	.header-information-container {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		.header-connection {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+
+			@media (min-width: 1440px) {
+				gap: 30px;
+			}
+
+			.header-phone {
+				color: $text-color;
+				font-family: "Nunito";
+				font-size: 14px;
+				font-weight: 400;
+
+				@media (min-width: 1440px) {
+					font-size: 16px;
+				}
+			}
+
+			.header-btn-connection {
+				width: 40px;
+				height: 40px;
+				background-color: $blue;
+				position: relative;
+				border-radius: 40px;
+				-webkit-border-radius: 40px;
+				-moz-border-radius: 40px;
+				-ms-border-radius: 40px;
+				-o-border-radius: 40px;
+
+				@media (min-width: 1440px) {
+					width: fit-content;
+					border-radius: 5px;
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					-ms-border-radius: 5px;
+					-o-border-radius: 5px;
+				}
+
+				span {
+					display: none;
+					padding: 13px 15px 12px 45px;
+					line-height: 1;
+					color: #fff;
+					font-family: "Raleway";
+					font-weight: 500;
+
+					@media (min-width: 1440px) {
+						display: block;
+					}
+				}
+
+				&::before {
+					position: absolute;
+					content: " ";
+					background-image: url("../img/phone.svg");
+					background-size: 20px;
+					width: 20px;
+					height: 20px;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					-webkit-transform: translate(-50%, -50%);
+					-moz-transform: translate(-50%, -50%);
+					-ms-transform: translate(-50%, -50%);
+					-o-transform: translate(-50%, -50%);
+
+					@media (min-width: 1440px) {
+						left: 15px;
+						transform: translateY(-50%);
+						-webkit-transform: translateY(-50%);
+						-moz-transform: translateY(-50%);
+						-ms-transform: translateY(-50%);
+						-o-transform: translateY(-50%);
+					}
+				}
+			}
+		}
+
+		.header-menu__icon {
+			position: relative;
+			display: flex;
+			width: 36px;
+			height: 22px;
+			cursor: pointer;
+			z-index: 5;
+
+			@media (min-width: 1440px) {
+				display: none;
+			}
+
+			span {
+				transition: 0.3s ease-in;
+				-webkit-transition: 0.3s ease-in;
+				-moz-transition: 0.3s ease-in;
+				-ms-transition: 0.3s ease-in;
+				-o-transition: 0.3s ease-in;
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				background-color: $gray;
+				border-radius: 50px;
+				-webkit-border-radius: 50px;
+				-moz-border-radius: 50px;
+				-ms-border-radius: 50px;
+				-o-border-radius: 50px;
+
+				&:first-child {
+					top: 0px;
+				}
+
+				&:nth-child(2) {
+					top: 50%;
+					left: 0px;
+					transform: translateY(-50%);
+					-webkit-transform: translateY(-50%);
+					-moz-transform: translateY(-50%);
+					-ms-transform: translateY(-50%);
+					-o-transform: translateY(-50%);
+				}
+
+				&:last-child {
+					top: auto;
+					bottom: 0px;
+				}
+			}
+
+			&.active {
+				span {
+					transform: scale(0);
+					&:first-child {
+						transform: rotate(-45deg);
+						top: 10px;
+					}
+					&:last-child {
+						transform: rotate(45deg);
+						bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}

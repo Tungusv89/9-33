@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #FFFFFF;
+    font-family: 'Mulish', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+section {
+    background-color: #FFFFFF;
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: "Raleway1";
+    src: url("/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Raleway2";
+    src: url("/fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Raleway3";
+    src: url("/fonts/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito1";
+    src: url("/fonts/Nunito-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito2";
+    src: url("/fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat1";
+    src: url("/fonts/Montserrat-Regular.ttf");
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid rgb(0, 91, 190);
+}
