@@ -6,8 +6,9 @@ body {
   padding: 0px;
   margin: 0px;
   background-color: #ffffff;
-  font-family: "Mulish", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #242424;
+  font-size: 14px;
 }
 
 h1,
@@ -127,7 +128,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 70px;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 @media (min-width: 1440px) {
   .header-body .header-menu {
@@ -170,6 +171,8 @@ header {
   display: flex;
   flex-direction: column;
   top: 61px;
+  background-color: #fff;
+  z-index: 1;
 }
 .header-body .header-information-container {
   display: flex;
@@ -204,6 +207,7 @@ header {
   background-color: #005bbe;
   position: relative;
   border-radius: 40px;
+  cursor: pointer;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
@@ -312,4 +316,73 @@ header {
 .header-body .header-information-container .header-menu__icon.active span:last-child {
   transform: rotate(45deg);
   bottom: 10px;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #242424;
+  line-height: 1.17;
+}
+
+.button {
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.17;
+  padding: 10px;
+  border: 1px solid #005bbe;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.button.white {
+  color: #005bbe;
+  background-color: #fff;
+}
+.button.blue {
+  color: #fff;
+  background-color: #005bbe;
+}
+
+.main-body {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (min-width: 1200px) {
+  .main-body {
+    flex-direction: row;
+  }
+}
+.main-body .content {
+  max-width: 600px;
+}
+.main-body .content .title {
+  text-align: center;
+}
+.main-body .content .text {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.main-body .content .text a {
+  color: #005bbe;
+  position: relative;
+  text-decoration: underline;
+}
+.main-body .content .buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.main-body img {
+  max-width: 760px;
 }
