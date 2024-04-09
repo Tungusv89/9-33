@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // }
   });
 
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.swiper-reviews', {
     // Optional parameters
     direction: 'horizontal',
     // loop: true,
@@ -45,4 +45,34 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  const swiper2 = new Swiper('.swiper-competence', {
+    // Optional parameters
+    direction: 'horizontal',
+    // loop: true,
+
+    breakpoints: {
+      
+      // при ширине 640px и больше
+      768: {
+
+        slidesPerView: 2,
+      },
+      1440: {
+        slidesPerView: 4,
+        spaceBetween: 18,
+      },
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
 });
