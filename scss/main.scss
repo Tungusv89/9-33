@@ -459,7 +459,7 @@ header {
 			-moz-border-radius: 5px;
 			-ms-border-radius: 5px;
 			-o-border-radius: 5px;
-}
+		}
 
 		.title-item {
 			font-size: 20px;
@@ -606,7 +606,7 @@ header {
 				-ms-border-radius: 5px;
 				-o-border-radius: 5px;
 
-				@media(min-width: 768px){
+				@media (min-width: 768px) {
 					max-width: 728px;
 				}
 			}
@@ -653,12 +653,94 @@ header {
 .iteraction-body {
 	margin-top: 80px;
 
-	>.text {
+	> .text {
 		margin-top: 40px;
 		color: $text-gray;
 	}
 
 	.title-item {
 		color: #000;
+	}
+}
+
+// Why we
+.whatabout-body {
+	margin-top: 80px;
+
+	.whatabout-items {
+		margin-top: 56px;
+		display: grid;
+		gap: 64px;
+
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (min-width: 1440px) {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: 1fr;
+		}
+
+		.whatabout-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 15px;
+
+			@media (min-width: 768px) {
+				&:first-child,
+				&:nth-child(3) {
+					justify-self: flex-end;
+				}
+
+				&:nth-child(2),
+				&:nth-child(4) {
+					justify-self: flex-start;
+				}
+			}
+
+			@media (min-width: 1440px) {
+				&:first-child,
+				&:nth-child(3),
+				&:nth-child(2),
+				&:nth-child(4) {
+					justify-self: center;
+				}
+			}
+
+			.image {
+				height: 122px;
+				width: auto;
+			}
+
+			.content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 10px;
+				max-width: 262px;
+
+				.title-item {
+					font-size: 20px;
+					font-weight: 500;
+					line-height: 1.17;
+
+					@media (min-width: 1920px) {
+						font-size: 25px;
+					}
+
+					span {
+						color: $blue;
+					}
+				}
+
+				.description {
+					font-size: 14px;
+					font-weight: 500;
+					color: $text-gray;
+					text-align: center;
+				}
+			}
+		}
 	}
 }

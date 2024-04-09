@@ -618,3 +618,72 @@ header {
 .iteraction-body .title-item {
   color: #000;
 }
+
+.whatabout-body {
+  margin-top: 80px;
+}
+.whatabout-body .whatabout-items {
+  margin-top: 56px;
+  display: grid;
+  gap: 64px;
+}
+@media (min-width: 768px) {
+  .whatabout-body .whatabout-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1440px) {
+  .whatabout-body .whatabout-items {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+.whatabout-body .whatabout-items .whatabout-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+@media (min-width: 768px) {
+  .whatabout-body .whatabout-items .whatabout-item:first-child, .whatabout-body .whatabout-items .whatabout-item:nth-child(3) {
+    justify-self: flex-end;
+  }
+  .whatabout-body .whatabout-items .whatabout-item:nth-child(2), .whatabout-body .whatabout-items .whatabout-item:nth-child(4) {
+    justify-self: flex-start;
+  }
+}
+@media (min-width: 1440px) {
+  .whatabout-body .whatabout-items .whatabout-item:first-child, .whatabout-body .whatabout-items .whatabout-item:nth-child(3), .whatabout-body .whatabout-items .whatabout-item:nth-child(2), .whatabout-body .whatabout-items .whatabout-item:nth-child(4) {
+    justify-self: center;
+  }
+}
+.whatabout-body .whatabout-items .whatabout-item .image {
+  height: 122px;
+  width: auto;
+}
+.whatabout-body .whatabout-items .whatabout-item .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 262px;
+}
+.whatabout-body .whatabout-items .whatabout-item .content .title-item {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+@media (min-width: 1920px) {
+  .whatabout-body .whatabout-items .whatabout-item .content .title-item {
+    font-size: 25px;
+  }
+}
+.whatabout-body .whatabout-items .whatabout-item .content .title-item span {
+  color: #005bbe;
+}
+.whatabout-body .whatabout-items .whatabout-item .content .description {
+  font-size: 14px;
+  font-weight: 500;
+  color: #787878;
+  text-align: center;
+}
