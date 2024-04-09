@@ -1013,3 +1013,37 @@ header {
 		background-color: $blue;
 	}
 }
+
+// partners
+
+.partners-body {
+	margin-top: 80px;
+
+	.partners-items {
+		margin-top: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 25px;
+
+		@media (min-width: 768px) {
+			max-width: 728px;
+			margin: 40px auto 0 auto;
+		}
+
+		@media (min-width: 1440px) {
+			flex-wrap: nowrap;
+			max-width: 100%;
+			gap: 60px;
+		}
+
+		.partners-item {
+			flex: 28% 0 1;
+
+			@media (min-width: 1440px) {
+				flex: 250px 1 1;
+			}
+		}
+	}
+}
