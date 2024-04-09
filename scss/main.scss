@@ -203,16 +203,7 @@ header {
 		}
 
 		.social {
-			display: flex;
-			gap: 23px;
 			padding: 186px 0 40px 0;
-
-			a {
-				img {
-					width: 40px;
-					height: 40px;
-				}
-			}
 
 			@media (min-width: 1440px) {
 				display: none;
@@ -385,6 +376,17 @@ header {
 }
 
 // Main
+.social {
+	display: flex;
+	gap: 23px;
+
+	a {
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
 .title {
 	font-family: "Raleway", sans-serif;
 	font-size: 25px;
@@ -1055,5 +1057,98 @@ header {
 	.competence-item {
 		max-width: 350px;
 		margin: 0 auto;
+	}
+}
+
+//contacts
+.contacts-body {
+	margin-top: 80px;
+	text-align: center;
+
+	.cotacts-items {
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+
+		.contacts-item {
+			display: grid;
+			gap: 10px;
+
+			.value {
+				font-size: 20px;
+				font-weight: 500;
+				color: $text-color;
+				line-height: 1.17;
+
+				@media (min-width: 768px) {
+					font-size: 30px;
+				}
+
+				@media (min-width: 1440px) {
+					font-size: 35px;
+				}
+			}
+
+			.text {
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 1.17;
+				color: $text-gray;
+
+				@media (min-width: 768px) {
+					font-size: 24px;
+				}
+			}
+
+			.social {
+				justify-content: center;
+				gap: 10px;
+
+				@media (min-width: 768px) {
+					gap: 30px;
+				}
+
+				a img {
+					width: 30px;
+					height: 30px;
+
+					@media (min-width: 768px) {
+						width: 51px;
+						height: 51px;
+					}
+				}
+			}
+
+			.map-body {
+				width: 310px;
+				height: 201px;
+				border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				-ms-border-radius: 10px;
+				-o-border-radius: 10px;
+
+				@media (min-width: 768px) {
+					width: 728px;
+					height: 417px;
+				}
+
+				@media (min-width: 1440px) {
+					width: 1030px;
+					height: 590px;
+				}
+
+				iframe {
+					border-radius: 10px;
+					-webkit-border-radius: 10px;
+					-moz-border-radius: 10px;
+					-ms-border-radius: 10px;
+					-o-border-radius: 10px;
+				}
+			}
+		}
 	}
 }
