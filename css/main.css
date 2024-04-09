@@ -355,6 +355,7 @@ header {
   font-family: "Raleway", sans-serif;
   line-height: 1.17;
   padding: 10px;
+  width: fit-content;
   cursor: pointer;
   border: 1px solid #005bbe;
   border-radius: 5px;
@@ -702,4 +703,62 @@ header {
   font-weight: 500;
   color: #787878;
   text-align: center;
+}
+
+.business-body {
+  margin-top: 80px;
+}
+.business-body .content {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media (min-width: 900px) {
+  .business-body .content {
+    grid-template-columns: 9fr 8fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    column-gap: 125px;
+  }
+}
+@media (min-width: 900px) {
+  .business-body .content .title {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+.business-body .content .title span {
+  color: #005bbe;
+}
+.business-body .content .text {
+  color: #787878;
+  line-height: 1.6;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .business-body .content .text {
+    font-size: 20px;
+  }
+}
+@media (min-width: 900px) {
+  .business-body .content .text {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+.business-body .content img {
+  max-width: 500px;
+}
+@media (min-width: 900px) {
+  .business-body .content img {
+    grid-column: 2;
+    grid-row: 1/3;
+  }
+}
+@media (min-width: 900px) {
+  .business-body .content .button {
+    margin-left: 0;
+  }
 }
