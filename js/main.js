@@ -1,24 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-  $('.header-menu__icon').click(function (event) {
-    // debugger;
+  $('.header-menu__icon').click(function () {
     $(this).toggleClass('active');
     $('.header-menu').toggleClass('active');
-    // if ($(this).hasClass('active')) {
-    //   $('body').data('scroll', $(window).scrollTop());
-    //   $('.header-menu').show(1000);
-    // } else {
-    // $('.header-menu').hide();
-    // }
-    // $('body').toggleClass('lock');
-    // if (!$(this).hasClass('active')) {
-    //   $('body,html').scrollTop(parseInt($('body').data('scroll')));
-    // }
   });
 
   const swiper = new Swiper('.swiper-reviews', {
     // Optional parameters
     direction: 'horizontal',
-    // loop: true,
 
     breakpoints: {
       // при ширине 320px и меньше
@@ -49,13 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiper2 = new Swiper('.swiper-competence', {
     // Optional parameters
     direction: 'horizontal',
-    // loop: true,
 
     breakpoints: {
-      
       // при ширине 640px и больше
       768: {
-
         slidesPerView: 2,
       },
       1440: {
@@ -75,4 +60,30 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
+  const swiper3 = new Swiper('.swiper-main', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+      delay: 3000, // Интервал автопроигрывания в миллисекундах (3 секунды)
+      disableOnInteraction: false, // Позволяет автопроигрыванию продолжаться после взаимодействия пользователя
+    },
+
+    breakpoints: {
+      320: {
+        spaceBetween: 20,
+      },
+      // при ширине 640px и больше
+      768: {
+        spaceBetween: 80,
+      },
+      1440: {
+        spaceBetween: 20,
+      },
+    },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    }
+  });
 });

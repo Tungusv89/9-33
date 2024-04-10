@@ -536,41 +536,56 @@ header {
 
 .main-body {
   margin-top: 60px;
+}
+.main-body .swiper-main {
+  margin-top: 0;
+}
+.main-body .swiper-main .main-item {
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
 @media (min-width: 1200px) {
-  .main-body {
+  .main-body .swiper-main .main-item {
     flex-direction: row;
   }
 }
-.main-body .content {
+.main-body .swiper-main .main-item img {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+}
+@media (min-width: 800px) {
+  .main-body .swiper-main .main-item img {
+    max-width: 760px;
+  }
+}
+.main-body .swiper-main .main-item .content {
   max-width: 600px;
 }
-.main-body .content .title {
+.main-body .swiper-main .main-item .content .title {
   text-align: center;
 }
-.main-body .content .text {
+.main-body .swiper-main .main-item .content .text {
   margin-top: 20px;
   text-align: center;
   font-weight: 500;
   line-height: 1.4;
 }
-.main-body .content .text a {
+.main-body .swiper-main .main-item .content .text a {
   color: #005bbe;
   position: relative;
   text-decoration: underline;
 }
-.main-body .content .buttons {
+.main-body .swiper-main .main-item .content .buttons {
   margin-top: 30px;
   display: flex;
   gap: 10px;
   justify-content: center;
-}
-.main-body img {
-  max-width: 760px;
 }
 
 .helped-section {
@@ -965,6 +980,22 @@ header {
 .contacts-body {
   margin-top: 80px;
   text-align: center;
+  padding-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .contacts-body {
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 1440px) {
+  .contacts-body {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1920px) {
+  .contacts-body {
+    padding-bottom: 125px;
+  }
 }
 .contacts-body .cotacts-items {
   margin-top: 40px;
@@ -1035,12 +1066,14 @@ header {
 }
 @media (min-width: 768px) {
   .contacts-body .cotacts-items .contacts-item .map-body {
+    margin-top: 20px;
     width: 728px;
     height: 417px;
   }
 }
 @media (min-width: 1440px) {
   .contacts-body .cotacts-items .contacts-item .map-body {
+    margin-top: 30px;
     width: 1030px;
     height: 590px;
   }
