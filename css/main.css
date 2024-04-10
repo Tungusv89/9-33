@@ -165,6 +165,7 @@ header {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  z-index: 9;
 }
 .header-body .header-menu .social {
   padding: 186px 0 40px 0;
@@ -567,6 +568,11 @@ header {
 .main-body .swiper-main .main-item .content {
   max-width: 600px;
 }
+@media (min-width: 768px) {
+  .main-body .swiper-main .main-item .content {
+    min-width: 400px;
+  }
+}
 .main-body .swiper-main .main-item .content .title {
   text-align: center;
 }
@@ -691,6 +697,7 @@ header {
 @media (min-width: 768px) {
   .about-body .about-items {
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
   }
 }
 .about-body .about-items .item {
